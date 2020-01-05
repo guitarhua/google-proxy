@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" crossorigin="anonymous">
+    <script src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.16.0/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="js/gproxy.js" crossorigin="anonymous"></script>
+    <title>谷歌代理服务器</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">谷歌代理服务器</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/haotian-wang/google-access-helper">Chrome插件</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://break-wall.gitlab.io/google-proxy/pac">PAC订阅</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main class="container" style="margin-top:30px">
+        <div class="row">
+            <p>以下代理服务器提取自<a href="http://www.ggfwzs.com">谷歌访问助手</a>，仅可用于访问以下网站，请勿用于非法用途！</p>
+        </div>
+        <ul class="list">
+            <li class="list-item"><a href="https://google.com">Google</a></li>
+            <li class="list-item"><a href="https://gmail.com">Gmail</a></li>
+            <li class="list-item"><a href="https://android.com">Android</a></li>
+            <li class="list-item"><a href="https://golang.org">Golang</a></li>
+            <li class="list-item"><a href="https://tensorflow.org">Tensorflow</a></li>
+            <li class="list-item"><a href="https://wikipedia.org">Wikipedia</a></li>
+        </ul>
+        <div class="row">
+            <p>代理服务器每24小时重置。如需重新获取代理服务器，请点击刷新按钮。</p>
+        </div>
+        <div class="row">
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th scope="col">协议</th>
+                    <th scope="col">服务器地址</th>
+                    <th scope="col">端口</th>
+                </tr>
+                </thead>
+                <tbody id="servers"></tbody>
+            </table>
+        </div>
+        <div class="row">
+            <button class="btn btn-primary" id="refresh">刷新</button>
+        </div>
+    </main>
+</body>
+</html>

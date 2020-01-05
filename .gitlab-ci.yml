@@ -1,0 +1,16 @@
+pages:
+  stage: deploy
+  image: node:12.14.0-slim
+  before_script:
+    - npm install jsdom
+    - npm install jquery
+  script:
+    - node js/getpac.js
+  after_script:
+    - mkdir public
+    - mv js public/
+    - mv *.html public/
+    - mv pac public/
+  artifacts:
+    paths:
+      - public
